@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zemoso-Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="table">
+ <h2>Table</h2>
+ <input id='search-table' onkeyup="search_tables()" type="text" placeholder="Search table" >
+
+ <div class='inner-table' id="table1" ondragover="allowDrop(event)" ondrop="drop(event)" onclick="showTable(tableOne,1)">
+    <h3>Table-1</h3>
+    Rs.<span>0</span> | Total items:<span>0</span>
+</div>
+
+  <div class='inner-table' id="table2" ondragover="allowDrop(event)" ondrop="drop(event)" onclick="showTable(tableTwo,2)">
+    <h3>Table-2</h3>
+    Rs.<span>0</span> | Total items:<span>0</span>
+</div>
+
+  <div class='inner-table'  id="table3" ondragover="allowDrop(event)" ondrop="drop(event)" onclick="showTable(tableThree,3)">
+    <h3>Table-3</h3>
+    Rs.<span>0</span> | Total items:<span>0</span>
+</div>
+
+</div>
+
+<div class="menu">
+    <h2>Menu</h2>
+    <input id='search-menu' onkeyup="search_menu()" type="text" placeholder="Search menu... by courses,by food" style="width: 210px;">
+    <div class='inner-menu starter' id="one" draggable='true' ondragstart="drag(event)" >
+    <h3>Crusty Garlic Focaccia with Melted Cheese</h3>
+    <pre>starter</pre>
+    <p>100.00</p>
+    </div>
+
+    <div class='inner-menu starter'  id="two" draggable='true' ondragstart="drag(event)";>
+    <h3>French Fries</h3>
+    <pre>starter</pre>
+    <p>120.00</p>
+    </div>
+
+    <div  class='inner-menu starter' id="three" draggable='true' ondragstart="drag(event)";>
+    <h3>Home Country Fries with Herbs</h3>
+    <pre>starter</pre>
+    <p>150.00</p>
+    </div>
+
+    <div class='inner-menu starter' id="four" draggable='true' ondragstart="drag(event)";>
+    <h3>French Fries with cheese</h3>
+    <pre>starter</pre>
+    <p>135.00</p>
+    </div>
+
+    <div class='inner-menu desserts' id="five" draggable='true' ondragstart="drag(event)";>
+    <h3>Vannila Icecream</h3>
+    <pre>desserts</pre>
+    <p>80.00</p>
+    </div>
+
+    <div class='inner-menu desserts' id="six" draggable='true' ondragstart="drag(event)";>
+    <h3>Tutty Fruity</h3>
+    <pre>desserts</pre>
+    <p>60.00</p>
+    </div>
+
+    <div class='inner-menu beverages' id="seventh" draggable='true' ondragstart="drag(event)";>
+    <h3>Kurkure</h3>
+    <pre>beverages</pre>
+    <p>10.00</p>
+    </div>
+
+    <div class='inner-menu beverages' id="eight" draggable='true' ondragstart="drag(event)";>
+    <h3>Potato Chips</h3>
+    <pre>beverages</pre>
+    <p>20.00</p>
+    </div>
+
+
+</div>
+
+<div id="container" style="margin: auto; padding: auto;">
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
